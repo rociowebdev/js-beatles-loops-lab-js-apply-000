@@ -1,15 +1,29 @@
 // add solution here
-function theBeatlesPlay(musicians, instruments) {
-   musicians = [ ];
-   instruments = [ ];
+function theBeatlesPlay(players, instruments) {
+    var allPlayers = [];
+    for (var i=0; i < players.length; i++) {
+        allPlayers.push(players[i] + " plays " + instruments[i]);
+    }
+    return allPlayers;
 }
 
-function howMany(selectObject) {
-  let numberSelected = 0;
-  for (let i = 0; i < selectObject.options.length; i++) {
-    if (selectObject.options[i].selected) {
-      numberSelected++;
+function johnLennonFacts() {
+    var facts = ["He was the last Beatle to learn to drive", "He was never a vegetarian", "He was a choir boy and boy scout", "He hated the sound of his own voice"];
+    var newFacts = [];
+    var i = 0;
+    while (i < facts.length) {
+        newFacts.push(facts[i] +"!!!");
+        i++;
     }
-  }
-  return numberSelected;
+    return newFacts;
+}
+
+function iLoveTheBeatles(num) {
+    var love = [];
+    do {
+        love.push("I love the Beatles!");
+        num++;
+    } while (num < 15);
+
+    return love;
 }
